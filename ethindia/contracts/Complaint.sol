@@ -25,5 +25,8 @@ contract complain{
   function getMessage() public view returns(string memory){
                return lol;
                         }
+  function getComplainnumber() public view returns(uint){
+              return(totalcomplains);
+             }                        
 
 }
