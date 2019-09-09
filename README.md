@@ -1,2 +1,2 @@
-# EthIndia
-A project for EthIndia 2.0
+# RedBully
+An Ethereum based dApp to end Sexual Harassment
