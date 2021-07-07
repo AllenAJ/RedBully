@@ -42,7 +42,8 @@ class App extends Component {
     await contract.methods.set(5).send({ from: accounts[0] });
 
     // Get the value from the contract to prove it worked.
-    const response = await contract.methods.get().call();
+    const response = await contract.methods.getm().call();
+    //console.log(response+"lll")
 
     // Update state with the result.
     this.setState({ storageValue: response });
