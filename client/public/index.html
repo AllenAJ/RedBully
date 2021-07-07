@@ -1,40 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+<!-- saved from url=(0047)https://colorlib.com/etc/lf/Login_v1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Complaint System</title>
+<script src="client.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v1/images/icons/favicon.ico">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/animate.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/select2.min.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/util.css">
+<link rel="stylesheet" type="text/css" href="./Login V1_files/main.css">
+</head>
+<body>
+<div class="limiter">
+<div class="container-login100">
+<div class="wrap-login100">
+<div class="login100-pic js-tilt" data-tilt="">
+<img src="./Login V1_files/img-01.webp" alt="IMG">
+</div>
+<form class="login100-form validate-form">
+<span class="login100-form-title">
+Complaint Form</span>
+<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+<input class="input100" type="text" name="email" placeholder="Email">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+</span>
+</div>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<div class="wrap-input100 validate-input" data-validate="Password is required">
+<input class="input100" type="text" name="pass" placeholder="Name">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-address-card" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Social Media Link is required">
+<input class="input100" type="text" name="pass" placeholder="Social Media Link">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-external-link-square" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Conjecture Name is required">
+<input class="input100" type="text" name="pass" placeholder="Conjecture Name">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-address-card" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Conjecture Link is required">
+<input class="input100" type="text" name="pass" placeholder="Conjecture Link">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-external-link-square" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Description is required">
+<input class="input100" type="text" name="pass" placeholder="Description">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-file-text-o" aria-hidden="true"></i>
+</span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Reward is Optional">
+<input class="input100" type="text" name="pass" placeholder="Reward">
+<span class="focus-input100"></span>
+<span class="symbol-input100">
+<i class="fa fa-inr" aria-hidden="true"></i>
+</span>
+</div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
+	<a class="txt2" >Please upload evidences*.</a>
+	<button class="upfile100-form-btn">Upload a file</button>
+	<div class="container-login100-form-btn">
+
+<div class="container-login100-form-btn">
+<button class="login100-form-btn">
+SUBMIT
+</button>
+</div>
+</div>
+
+<div class="text-center p-t-136">
+	<button id="myBtn">Help<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i></button>
+</div>
+<div id="myModal" class="modal">
+<noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><b>Why RedBully?:</b><br />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+*-Redbully does not ask you to fill documents or wait for months to file a complaint instead our app makes sure that the complaint are uploaded and posted instantaneously to the blockchain network. Hence anyone using our app can take action against the person.<br />
+*-Once a complaint is filed to the blockchain network, it cannot be taken down by anyone, thereby politics or corruption cannot interfere in this matter.<br />
+*-The person who is complaining shall not worry about the jurisdictional issues, nor the person who plans on taking action.<br />
+*-The network would also solve problems that transcends jurisdictional territories faster.<br />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</form>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" async="" src="./Login V1_files/analytics.js.download"></script>
+<script src="./Login V1_files/jquery-3.2.1.min.js.download" type="text/javascript"></script>
+<script src="./Login V1_files/popper.js.download" type="text/javascript"></script>
+<script src="./Login V1_files/bootstrap.min.js.download" type="text/javascript"></script>
+<script src="./Login V1_files/select2.min.js.download" type="text/javascript"></script>
+<script src="./Login V1_files/tilt.jquery.min.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<script async="" src="./Login V1_files/js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<script src="./Login V1_files/main.js.download" type="text/javascript"></script>
+
+
+</body></html>
